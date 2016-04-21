@@ -5,7 +5,7 @@ Created on Thu Mar 24 11:01:50 2016
 @author: kaufmana
 """
 
-import TractableBufferStock as Model
+import HARK.TractableBufferStock as Model
 import unittest
 
 class FuncTest(unittest.TestCase):

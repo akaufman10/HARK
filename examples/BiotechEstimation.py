@@ -3,7 +3,7 @@ This is an early run of the Biotech structural estimation.
 '''
 
 import numpy as np
-import BiotechModel as Model
+import HARK.Biotech as Model
 from time import time
 import csv
 

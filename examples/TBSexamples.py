@@ -8,9 +8,9 @@ sys.path.insert(0,'../')
 sys.path.insert(0,'../ConsumptionSavingModel')
 
 import numpy as np
-import TractableBufferStock as Model
-from HARKutilities import plotFunc, plotFuncs
-from ConsumptionSavingModel import ConsumerType, consumptionSavingSolverMarkov
+import HARK.TractableBufferStock as Model
+from HARK import plotFunc, plotFuncs
+from HARK.ConsumptionSavingModel import ConsumerType, consumptionSavingSolverMarkov
 from time import clock
 
 # Define the model primitives

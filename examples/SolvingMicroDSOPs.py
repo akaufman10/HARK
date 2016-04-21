@@ -2,12 +2,12 @@
 # contained in the HARK folder. 
 import sys 
 sys.path.insert(0,'../')
+from HARK.ConsumptionSavingModel import SetupConsumerParameters as Params
 
-import SetupConsumerParameters as Params
-import ConsumptionSavingModel as Model
+import HARK.ConsumptionSavingModel as Model
 import SetupSCFdata as Data
-from HARKsimulation import generateDiscreteDraws
-from HARKestimation import minimizeNelderMead, bootstrapSampleFromData
+from HARK import generateDiscreteDraws
+from HARK import minimizeNelderMead, bootstrapSampleFromData
 import numpy as np
 import pylab
 from time import time

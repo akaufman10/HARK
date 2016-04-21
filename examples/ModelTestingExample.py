@@ -5,8 +5,8 @@ Created on Tue Apr 12 15:08:22 2016
 @author: kaufmana
 """
 
-import TractableBufferStock as Model
-import ModelTesting as test
+import HARK.TractableBufferStock as Model
+import HARK as test
 
 base_primitives = {'mho' : .015,
                    'beta' : 0.9,

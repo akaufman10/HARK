@@ -4,7 +4,7 @@ All Booleans at the top of SetupParamsCSTW should be set to False, as this modul
 imports cstwMPC; there's no need to actually do anything but load the model.
 '''
 
-from cstwMPC import *
+from HARK.cstwMPC import *
 import matplotlib.pyplot as plt
 
 plot_range = (0.0,30.0)

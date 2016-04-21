@@ -6,12 +6,12 @@ parallel.  Note that HARKparallel will not work "out of the box", as Anaconda
 does not include two packages needed for it.  See HARKparallel.py.
 '''
 
-import SetupConsumerParameters as Params
-import ConsumptionSavingModel as Model
-from HARKutilities import plotFunc, plotFuncDer, plotFuncs
+import HARK.ConsumptionSavingModel as Model
+from HARK.ConsumptionSavingModel import SetupConsumerParameters as Params
+from HARK import plotFunc, plotFuncDer, plotFuncs
 from time import time
 from copy import deepcopy
-from HARKparallel import multiThreadCommandsFake, multiThreadCommands
+from HARK import multiThreadCommandsFake, multiThreadCommands
 mystr = lambda number : "{:.4f}".format(number)
 import numpy as np
 

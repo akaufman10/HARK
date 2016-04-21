@@ -8,9 +8,9 @@ continuous 1D space.
 import sys 
 sys.path.insert(0,'../')
 
-from ConsumptionSavingModel import consumptionSavingSolverENDG, ConsumerType
-from DiscreteChoice import discreteChoiceContinuousStateSolver, DiscreteChoiceSolution
-from HARKutilities import calculateMeanOneLognormalDiscreteApprox, addDiscreteOutcomeConstantMean, setupGridsExpMult, plotFunc, plotFuncs, CRRAutility_inv, CRRAutility_invP
+from HARK.ConsumptionSavingModel import consumptionSavingSolverENDG, ConsumerType
+from HARK.DiscreteChoice import discreteChoiceContinuousStateSolver, DiscreteChoiceSolution
+from HARK import calculateMeanOneLognormalDiscreteApprox, addDiscreteOutcomeConstantMean, setupGridsExpMult, plotFunc, plotFuncs, CRRAutility_inv, CRRAutility_invP
 import SetupConsumerParameters as Params
 import numpy as np
 from time import clock
