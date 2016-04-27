@@ -9,8 +9,8 @@ import sys
 sys.path.insert(0,'../')
 
 import numpy as np
-from ..HARKinterpolation import LinearInterp, Cubic1DInterpDecay
-from ..HARKutilities import CRRAutility_inv, CRRAutility_invP, CRRAutility, CRRAutilityP, CRRAutilityP_inv
+from HARKinterpolation import LinearInterp, Cubic1DInterpDecay
+from HARKutilities import CRRAutility_inv, CRRAutility_invP, CRRAutility, CRRAutilityP, CRRAutilityP_inv
 
 identityFunc = lambda Z : Z
 onesFunc = lambda Z : np.ones(Z.shape)

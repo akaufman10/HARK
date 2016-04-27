@@ -6,10 +6,10 @@ This module defines the Tractable Buffer Stock model described in CDC's notes.
 import sys 
 sys.path.insert(0,'../')
 
-from ..HARKcore import AgentType, NullFunc
-from ..HARKutilities import warnings  # Because of "patch" to warnings modules
-from ..HARKutilities import CRRAutility, CRRAutilityP, CRRAutilityPP, CRRAutilityPPP, CRRAutilityPPPP, CRRAutilityP_inv, CRRAutility_invP, CRRAutility_inv
-from ..HARKinterpolation import Cubic1DInterpDecay
+from HARKcore import AgentType, NullFunc
+from HARKutilities import warnings  # Because of "patch" to warnings modules
+from HARKutilities import CRRAutility, CRRAutilityP, CRRAutilityPP, CRRAutilityPPP, CRRAutilityPPPP, CRRAutilityP_inv, CRRAutility_invP, CRRAutility_inv
+from HARKinterpolation import Cubic1DInterpDecay
 from copy import copy
 from scipy.optimize import newton, brentq
 #from cstwMPC import cstwMPCagent

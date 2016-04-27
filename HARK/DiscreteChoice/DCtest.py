@@ -7,8 +7,8 @@ This is a temporary script for testing the discrete choice module.
 import sys 
 sys.path.insert(0,'../')
 
-from HARK import plotFunc, plotFuncs
-import HARK.DiscreteChoice as Model
+from HARKutilities import plotFunc, plotFuncs
+import DiscreteChoice as Model
 import numpy as np
 
 x_grid = np.linspace(0,10,200)

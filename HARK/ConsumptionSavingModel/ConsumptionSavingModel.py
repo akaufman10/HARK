@@ -4,11 +4,11 @@ import sys
 sys.path.insert(0,'../')
 
 import numpy as np
-from ..HARKcore import AgentType, NullFunc
-from ..HARKutilities import warnings  # Because of "patch" to warnings modules
-from ..HARKutilities import calculateMeanOneLognormalDiscreteApprox, addDiscreteOutcomeConstantMean, createFlatStateSpaceFromIndepDiscreteProbs, setupGridsExpMult, CRRAutility, CRRAutilityP, CRRAutilityPP, CRRAutilityP_inv, CRRAutility_invP, CRRAutility_inv
-from ..HARKinterpolation import Cubic1DInterpDecay, ConstrainedComposite, LinearInterp
-from ..HARKsimulation import generateMeanOneLognormalDraws, generateBernoulliDraws
+from HARKcore import AgentType, NullFunc
+from HARKutilities import warnings  # Because of "patch" to warnings modules
+from HARKutilities import calculateMeanOneLognormalDiscreteApprox, addDiscreteOutcomeConstantMean, createFlatStateSpaceFromIndepDiscreteProbs, setupGridsExpMult, CRRAutility, CRRAutilityP, CRRAutilityPP, CRRAutilityP_inv, CRRAutility_invP, CRRAutility_inv
+from HARKinterpolation import Cubic1DInterpDecay, ConstrainedComposite, LinearInterp
+from HARKsimulation import generateMeanOneLognormalDraws, generateBernoulliDraws
 from scipy.optimize import newton, brentq
 from copy import deepcopy, copy
 

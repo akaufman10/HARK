@@ -11,13 +11,16 @@ sys.path.insert(0,'../')
 # The following libraries are part of the standard python distribution
 import numpy as np                                      # Numerical Python
 import csv
-from HARK.ConsumptionSavingModel.SetupConsumerParameters import initial_age, empirical_cohort_age_groups                           
+from SetupConsumerParameters import initial_age, empirical_cohort_age_groups                           
+
+# Libraries below are part of HARK's module system and must be in this directory
+from HARKutilities import warnings
 
 # Set the path to the empirical data:
 scf_data_path = './'
 
 # Open the file handle and create a reader object and a csv header
-infile = open(scf_data_path + 'SCFdata.csv', 'rb')
+infile = open(scf_data_path + 'SCFdata.csv', 'rb')  
 csv_reader = csv.reader(infile)
 data_csv_header = csv_reader.next()
 

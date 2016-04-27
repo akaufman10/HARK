@@ -11,12 +11,12 @@ sys.path.insert(0,'../ConsumptionSavingModel')
 import numpy as np
 from copy import copy, deepcopy
 from time import time
-from ..HARKutilities import calculateMeanOneLognormalDiscreteApprox, createFlatStateSpaceFromIndepDiscreteProbs, makeUniformDiscreteDistribution, weightedAverageSimData, extractPercentiles, getLorenzPercentiles, avgDataSlice
-from ..HARKsimulation import generateDiscreteDraws, generateMeanOneLognormalDraws
-from ..HARKcore import AgentType
-from ..HARKparallel import multiThreadCommandsFake, multiThreadCommands
+from HARKutilities import calculateMeanOneLognormalDiscreteApprox, createFlatStateSpaceFromIndepDiscreteProbs, makeUniformDiscreteDistribution, weightedAverageSimData, extractPercentiles, getLorenzPercentiles, avgDataSlice
+from HARKsimulation import generateDiscreteDraws, generateMeanOneLognormalDraws
+from HARKcore import AgentType
+from HARKparallel import multiThreadCommandsFake, multiThreadCommands
 import SetupParamsCSTW as Params
-import HARK.ConsumptionSavingModel as Model
+import ConsumptionSavingModel as Model
 from scipy.optimize import golden, brentq
 import matplotlib.pyplot as plt
 import csv

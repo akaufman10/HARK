@@ -8,12 +8,12 @@ sys.path.insert(0,'../')
 
 import numpy as np
 from scipy import stats
-from ..HARKcore import AgentType
+from HARKcore import AgentType
 from copy import deepcopy
-from ..HARKcore import solveACycle
-from ..HARKinterpolation import QuadlinearInterp
-from ..HARKutilities import makeMarkovApproxToNormal, calculateLognormalDiscreteApprox, calculateBetaDiscreteApprox, createFlatStateSpaceFromIndepDiscreteProbs, setupGridsExpMult
-from ..HARKestimation import bootstrapSampleFromData
+from HARKcore import solveACycle
+from HARKinterpolation import QuadlinearInterp
+from HARKutilities import makeMarkovApproxToNormal, calculateLognormalDiscreteApprox, calculateBetaDiscreteApprox, createFlatStateSpaceFromIndepDiscreteProbs, setupGridsExpMult
+from HARKestimation import bootstrapSampleFromData
 #from time import time
 
 '''

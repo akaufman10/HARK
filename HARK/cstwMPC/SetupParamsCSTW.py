@@ -1,12 +1,6 @@
 '''
 This package load parameters used in the cstwMPC estimations.
 '''
-
-# Import the HARK library.  The assumption is that this code is in a folder
-# contained in the HARK folder. 
-import sys 
-sys.path.insert(0,'../')
-
 import numpy as np
 import csv
 from copy import copy, deepcopy
@@ -67,7 +61,7 @@ psi_sigma = np.concatenate((((0.00011342*(np.linspace(24,64.75,working_T-1)-47)*
 psi_sigma = np.ndarray.tolist(psi_sigma)
 
 # Import survival probabilities from SSA data
-f = open('./USactuarial.txt','r')
+f = open('USactuarial.txt','r')
 actuarial_reader = csv.reader(f,delimiter='\t')
 raw_actuarial = list(actuarial_reader)
 base_death_probs = []
